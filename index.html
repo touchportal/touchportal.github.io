@@ -2,20 +2,140 @@
 <html>
     
 <head>
-    <title>touchportal</title>
+    <title>Crew Archives v0.1-alpha</title>
+    
+    <script>
+        
+    </script>
 </head>
 
 <style>
-    webmount {
-        background: url(https://i.imgur.com/e3K9npA.png) fixed;
-        height: 1000px;
-        width: 600px;
+    :root {
+        --default-font: Arial;
+        --white: #ffffff;
+        --light-gray: #f1f1f1;
+        --dark-gray: #777777;
+        --black: #333333;
+    }
+    
+    .unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+    }
+    
+    #web-mount {
+        font-family: var(--default-font);
+        padding: 0;
+        margin: 0;
+    }
+	
+    .flex-mount {
+        display: block;
+        background: var(--white);
+        height: auto;
+        width: 100%;
+    }
+	
+    .flex-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+	
+    .flex-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        height: 45px;
+        width: 120px;
+        border-bottom: 0;
+    }
+	
+    .flex-button:hover {
+        height: 43px;
+        border-bottom: 2px solid var(--black);
+    }
+    
+    
+    .nav-button {
+        color: #222222;
+        text-decoration: none;
+    }
+    
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-nodecoration {
+    	text-decoration: none;
+    }
+	
+    .text-bold {
+        font-weight: 600;
+    }
+	
+    .text-white {
+        color: #f1f1f1;
+    }
+	
+    .text-black {
+        color: #222222;
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+        .flex-content {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .flex-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--white);
+            height: 45px;
+            width: 150px;
+            border-bottom: 0;
+        }
+
+        .flex-button:hover {
+            height: 43px;
+            border-bottom: 2px solid var(--black);
+        }
     }
 </style>
 
 <body>
-    <div id="webmount">
-        <span>This is a work in progress.</span>
+    <div id="web-mount">
+        <div id="nav-bar" class="flex-mount">
+            <div id="nav-content" class="flex-content">
+                <a href="/" id="button" class="flex-button nav-button">
+                    notes
+                </a>
+                <a href="/" id="button" class="flex-button nav-button">
+                    writing
+                </a>
+                <a href="/" id="button" class="flex-button nav-button">
+                    images
+                </a>
+                <a href="/" id="button" class="flex-button nav-button">
+                    others
+                </a>
+            </div>
+        </div>
+        <div id="content">
+        	<span>test</span>
+        </div>
     </div>
 </body>
 

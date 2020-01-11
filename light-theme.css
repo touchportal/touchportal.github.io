@@ -1,0 +1,172 @@
+:root {
+    --default-font: Arial;
+    --white: #ffffff;
+    --light-gray: #f1f1f1;
+    --dark-gray: #777777;
+    --black: #333333;
+}
+
+/* IDs */
+
+#web-mount {
+    font-family: var(--default-font);
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+#header-mount {
+    background-color: red;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-container {
+    background-color: orange;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-logo {
+    background-color: yellow;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+#logo {
+    height: 70px;
+    width: 247.787610619469px;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* nav */
+
+#nav-mount {
+    background-color: green;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-container {
+    background-color: blue;
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    background-color: purple;
+    height: auto;
+    display: flex;
+    max-width: 600px;
+}
+
+#nav-button {
+    background-color: pink;
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* content */
+
+#content-mount {
+    
+}
+
+#content-container {
+    
+}
+
+/* CLASSES */
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/* div */
+
+.div-mount {
+    
+}
+
+.div-container {
+    
+}
+
+.div-static {
+    
+}
+
+/* flex */
+
+.flex-mount {
+    
+}
+
+.flex-container {
+    
+}
+
+.flex-content {
+    
+}
+
+/* ICONS */
+
+.crew-archives-logo {
+    height: 70px;
+    width: 247.787610619469px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

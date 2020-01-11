@@ -77,6 +77,7 @@ position: ;
 top: ;
 margin: ;
 padding: ;
+border-radius: ;
 flex-flow: ;
 flex-basis: ;
 justify-content: ;

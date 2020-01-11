@@ -68,9 +68,24 @@ menu : three bars that displays the navbar when clicked
 close : stops displaying the element when clicked
 back-arrow : goes back to the previous page
 
-
-
-
+[Hierarchy]
+background: ;
+height: ;
+width: ;
+display: ;
+position: ;
+top: ;
+margin: ;
+padding: ;
+flex-flow: ;
+flex-basis: ;
+justify-content: ;
+align-items: ;
+text-align: ;
+text-decoration: ;
+color: ;
+font-size: ;
+opacity: ;
 
 
 

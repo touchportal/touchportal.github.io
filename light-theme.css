@@ -4,6 +4,7 @@
     --light-gray: #f1f1f1;
     --dark-gray: #777777;
     --black: #333333;
+    background: url('img/header-default.png') fixed top center;
 }
 
 /* IDs */
@@ -18,16 +19,17 @@
 /* header */
 
 #header-mount {
-    background-color: red;
+    background: url('img/header-default.png') fixed top center;
     height: 160px;
     width: 100%;
     display: flex;
+    position: sticky;
+    top: -115px;
     justify-content: center;
     align-items: center;
 }
 
 #header-container {
-    background-color: orange;
     height: 100%;
     width: 90%;
     display: flex;
@@ -37,11 +39,7 @@
 }
 
 #header-logo {
-    background-color: yellow;
-    height: auto;
-    width: auto;
-    display: block;
-    margin: auto;
+    margin: auto 0;
 }
 
 #logo {
@@ -54,8 +52,6 @@
 /* nav */
 
 #nav-mount {
-    background-color: green;
-    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -63,39 +59,74 @@
 }
 
 #nav-container {
-    background-color: blue;
-    height: auto;
-    width: 600px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar {
+    width: 800px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 
-#nav-bar {
-    background-color: purple;
-    height: auto;
-    display: flex;
-    max-width: 600px;
-}
-
 #nav-button {
-    background-color: pink;
-    height: 45px;
-    width: 120px;
+    height: 30px;
+    padding: 12px 0 3px 0;
+    flex-basis: 100%;
     text-align: center;
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
+    font-size: 14pt;
+}
+
+#nav-button:hover {
+    background: linear-gradient(transparent, rgba(255,255,255,0.1));
+    height: 30px;
+    padding: 12px 0 0 0;
+    border-bottom: 3px solid white;
 }
 
 /* content */
 
 #content-mount {
-    
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #content-container {
+    background: var(--light-gray);
+    height: 100%;
+    width: 96%;
+    display: flex;
+    padding: 50px 0 0 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+/* Smaller Screen */
+
+@media screen and (max-width: 600px) {
+    #header-mount {
+        height: 120px;
+        top: -115px;
+    }
     
+    #logo {
+        height: 70px;
+        width: 247.787610619469px;
+        padding: 10px 20px;
+    }
+    
+    #nav-mount {
+        display: none;
+    }
 }
 
 /* CLASSES */

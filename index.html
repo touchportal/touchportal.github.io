@@ -5,6 +5,9 @@
     <title>Crew Archives v0.2-alpha</title>
     
     <link rel="stylesheet" type="text/css" href="light-theme.css">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,16 +20,16 @@
                 <div id="nav-mount">
                     <div id="nav-container">
                         <div id="nav-bar">
-                            <a id="nav-button" href="">
+                            <a class="notes" id="nav-button" href="">
                                 notes
                             </a>
-                            <a id="nav-button" href="">
+                            <a class="writing" id="nav-button" href="">
                                 writing
                             </a>
-                            <a id="nav-button" href="">
+                            <a class="images" id="nav-button" href="">
                                 images
                             </a>
-                            <a id="nav-button" href="">
+                            <a class="others" id="nav-button" href="">
                                 others
                             </a>
                         </div>
@@ -35,7 +38,48 @@
             </div>
         </div>
         <div id="content-mount">
-            <div id="content-container">
+            <div id="content-container-left">
+                <div id="content-card">
+                    <div id="content-header">
+                        <div id="content-title">
+                            hi there this is a very long title just in case you need to input it and it just breaks stuff but who am i kidding its going to break anyways
+                        </div>
+                        <div id="content-date">
+                            12-01-2020
+                        </div>
+                    </div>
+                    <div id="content-body">
+                        you may or may not have discovered that this exists which is why you should not touch it unless given permission to fun fact you should go and read the footer or perhaps try making your screen so small that the little nifty error message pops up also i spent a lot of time on the header so enjoy the pictures that i took in real life and in game if you are wondering where i got inspiration from i do not know so dont even bother asking in the first place why dont you go to dribbble and take a look yourself you absolute pompous buffalo
+                    </div>
+                </div>
+                <div id="content-card">
+                    <div id="content-header">
+                        <div id="content-title">
+                            content-title
+                        </div>
+                        <div id="content-date">
+                            12-01-2020
+                        </div>
+                    </div>
+                    <div id="content-body">
+                        content-body
+                    </div>
+                </div>
+                <div id="content-card">
+                    <div id="content-header">
+                        <div id="content-title">
+                            this is how a short title should look like
+                        </div>
+                        <div id="content-date">
+                            12-01-2020
+                        </div>
+                    </div>
+                    <div id="content-body">
+                        if you decide to save peoples eyes and not write a thousand page essay it would look like this
+                    </div>
+                </div>
+            </div>
+            <div id="content-container-right">
                 
             </div>
         </div>
@@ -45,7 +89,16 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://github.com/touchportal/touchportal.github.io/scripts.js"></script>
+    <div id="mobile-notice">
+        <a href="mobile/index.html">
+            <br>
+            The web version does not support screen sizes below 808px.
+            <br>
+            Click or tap this to go to our mobile version of the website.
+            <br><br>
+            But guess what, I have no time to build a mobile version at the moment so whoops.
+        </a>
+    </div>
 </body>
 
 </html>

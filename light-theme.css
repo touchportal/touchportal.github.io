@@ -185,7 +185,7 @@ body {
 /* footer */
 
 #footer-mount {
-    background: url('img/header-default.png') fixed top center;
+    background: url('../img/header-default.png') fixed top center;
     height: 100%;
     width: 100%;
     display: flex;

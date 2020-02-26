@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-    <title>Crew Archives v0.3-alpha</title>
+    <title>Crew Archives v0.4-alpha</title>
     
     <link rel="stylesheet" type="text/css" href="../light-theme.css">
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="header.js"></script>
+    
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css">
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <div id="web-mount">
         <div id="header-mount">
+            <div id="header-img-notes"></div>
+            <div id="header-img-writing"></div>
+            <div id="header-img-images"></div>
+            <div id="header-img-others"></div>
             <div id="header-container">
                 <div id="header-logo">
-                    <img id="logo" src="../img/crew-archives-logo-white-min.png">
+                    <img id="logo" src="img/crew-archives-logo-white-min.png">
                 </div>
                 <div id="nav-mount">
                     <div id="nav-container">
                         <div id="nav-bar">
-                            <a class="notes" id="nav-button" href="">
+                            <a class="notes" id="nav-button" href="notes/index.html">
                                 notes
                             </a>
-                            <a class="writing" id="nav-button" href="">
+                            <a class="writing" id="nav-button" href="writing/index.html">
                                 writing
                             </a>
-                            <a class="images" id="nav-button" href="">
+                            <a class="images" id="nav-button" href="images/index.html">
                                 images
                             </a>
-                            <a class="others" id="nav-button" href="">
+                            <a class="others" id="nav-button" href="others/index.html">
                                 others
                             </a>
                         </div>

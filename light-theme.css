@@ -2,6 +2,11 @@
 
 :root {
     --default-font: Arial;
+    
+    --default-text-color: #333333;
+    --nav-text-color: #ffffff;
+    --footer-text-color: #ffffff;
+    
     --white: #ffffff;
     --light-gray: #f1f1f1;
     --dark-gray: #777777;
@@ -25,7 +30,7 @@ body {
 
 #web-mount {
     font-family: var(--default-font);
-    color: var(--black);
+    color: var(--default-text-color);
 }
 
 /* header */
@@ -39,6 +44,22 @@ body {
     top: -115px;
     justify-content: center;
     align-items: center;
+}
+
+#header-img-notes {
+    background: url('img/header-notes.png') fixed top center;
+}
+
+#header-img-writing {
+    background: url('img/header-writing.png') fixed top center;
+}
+
+#header-img-images {
+    background: url('img/header-images.png') fixed top center;
+}
+
+#header-img-others {
+    background: url('img/header-others.png') fixed top center;
 }
 
 #header-container {
@@ -91,7 +112,7 @@ body {
     flex-basis: 100%;
     text-align: center;
     text-decoration: none;
-    color: var(--white);
+    color: var(--nav-text-color);
     font-size: 14pt;
 }
 
@@ -185,7 +206,7 @@ body {
 /* footer */
 
 #footer-mount {
-    background: url('../img/header-default.png') fixed top center;
+    background: url('img/header-default.png') fixed top center;
     height: 100%;
     width: 100%;
     display: flex;
@@ -200,7 +221,7 @@ body {
     margin: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--white);
+    color: var(--footer-text-color);
     font-size: 11pt;
 }
 
